@@ -10,7 +10,9 @@
     <ul>
       <li th:text="${userInfo.name}"></li>
       <li th:text="${userInfo.lastName}"></li>
-      <li th:text="${userInfo.email}"></li>
+      <li th:if="${userInfo.email != ''}" th:text="${userInfo.email}"></li>
+      <li th:if="${userInfo.email == ''}" th:text="${'No tiene email'}"></li>
+
       <li th:text="${userInfo.id}"></li>
     </ul>
   </body>
