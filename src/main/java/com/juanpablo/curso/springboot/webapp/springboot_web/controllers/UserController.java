@@ -43,6 +43,7 @@ public class UserController {
 
         return "list";
     }
+    
     @ModelAttribute("users")
     public List<User> usersModel() {
         return Arrays.asList(
