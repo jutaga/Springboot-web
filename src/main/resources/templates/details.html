@@ -15,5 +15,12 @@
 
       <li th:text="${userInfo.id}"></li>
     </ul>
+    <a th:href="@{/list}">Ver listado</a>
+    <a th:href="@{'/api/params/foo?message=' + ${title}}">ver mensaje</a>
+    <a th:href="@{/api/params/foo(message=qlqqq)}">ver mensaje</a>
+    <a th:href="@{/api/params/bar(text=qlqqq, code=10)}">ver bar</a>
+    <a th:href="@{/api/var/baz/hola bb}">ver variable</a>
+
+
   </body>
 </html>
